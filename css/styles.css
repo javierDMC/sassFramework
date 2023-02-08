@@ -391,42 +391,35 @@ html {
 
 .c-button {
   display: inline-block;
-  /****ejemplo propiedades del c-button****
-
-  padding-left: getPadding(6);
-  padding-right: getPadding(6);
-  padding-top: getPadding(3);
-  padding-bottom: getPadding(3);
-
-  background-color: getColor("principal", 6);
-  color: getColor("blanco", 1);
-
-  border-color: getColor("principal", 6);
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #0073E6;
+  color: #FFFFFF;
+  border-color: #0073E6;
   border-width: 1px;
   border-style: solid;
-  border-radius: getBorderRadius(3);
-
-  font-family: getFontFamily(principal);
-  font-size: getFontSize(3);
+  border-radius: 4px;
+  font-family: Arial;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
-
   cursor: pointer;
-  @include shadow(1);
-
-  &--secundario {
-      color: getColor("principal", 6);
-      background-color: getColor("blanco", 1);
-  }
-
-  &--grande{
-      padding-left: getPadding(8);
-      padding-right: getPadding(8);
-      padding-top: getPadding(4);
-      padding-bottom: getPadding(4);
-      font-size: getFontSize(5);
-  }
-  */
+  -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
+  -moz-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
+  box-shadow: 0 4px 6px hsla(0, 0%, 50%);
+}
+.c-button--secundario {
+  color: #0073E6;
+  background-color: #FFFFFF;
+}
+.c-button--grande {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
 }
 
 .c-panel {
@@ -435,49 +428,36 @@ html {
   -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
   -moz-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
   box-shadow: 0 4px 6px hsla(0, 0%, 50%);
-  /****ejemplo de propiedades de c-panel****
-
-  background-color: getColor("gris", 2);
-  color: getColor("black", 1);
-
-  border: 1px solid getColor("gris", 8);
-  margin-bottom: getMargin(8);
-
-  font-family: getFontFamily(principal);
+  background-color: #E6E6E6;
+  border: 1px solid #454545;
+  margin-bottom: 20px;
+  font-family: Arial;
   text-align: center;
-
-  &__cabecera {
-      font-weight: bold;
-      font-size: getFontSize(5);
-
-      border-width: 1px;
-      border-style: solid;
-      border-color: getColor("gris", 5);
-
-      padding-left: getPadding(8);
-      padding-right: getPadding(8);
-      padding-top: getPadding(4);
-      padding-bottom: getPadding(4);
-
-  }
-
-  &__contenido {
-      padding: getPadding(12);
-  }
-
-  &__titulo {
-      font-size: getFontSize(8);
-      font-weight: bold;
-
-      color: getColor("principal", 6);
-      margin-bottom: getMargin(8);
-  }
-
-  &__texto{
-      margin-bottom: getMargin(12);
-      line-height: 1.5em;
-      font-size: getFontSize(2);
-  }*/
+}
+.c-panel__cabecera {
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #949494;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.c-panel__contenido {
+  padding: 48px;
+}
+.c-panel__titulo {
+  font-size: 64px;
+  font-weight: bold;
+  color: #0073E6;
+  margin-bottom: 20px;
+}
+.c-panel__texto {
+  margin-bottom: 48px;
+  line-height: 1.5em;
+  font-size: 14px;
 }
 
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
@@ -1442,6 +1422,46 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
 .g--margin-horizontal-15 {
   margin-left: 128px;
   margin-right: 128px;
+}
+
+.g--parrafo-s {
+  font-family: "Arial";
+  font-size: 40px;
+}
+
+.g--parrafo-m {
+  font-family: "Arial";
+  font-size: 45px;
+}
+
+.g--parrafo-l {
+  font-family: "Arial";
+  font-size: 50px;
+}
+
+.g--parrafo-xl {
+  font-family: "Arial";
+  font-size: 60px;
+}
+
+.g--titulo-xs {
+  font-family: "Times New Roman";
+  font-size: 40px;
+}
+
+.g--titulo-s {
+  font-family: "Times New Roman";
+  font-size: 45px;
+}
+
+.g--titulo-m {
+  font-family: "Times New Roman";
+  font-size: 50px;
+}
+
+.g--titulo-l {
+  font-family: "Times New Roman";
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
