@@ -1,0 +1,4 @@
+.l-columns-4{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 375px, 1fr ) );
+}

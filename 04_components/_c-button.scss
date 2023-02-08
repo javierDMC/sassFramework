@@ -1,0 +1,40 @@
+.c-button {
+    display: inline-block;
+
+    /****ejemplo propiedades del c-button****
+
+    padding-left: getPadding(6);
+    padding-right: getPadding(6);
+    padding-top: getPadding(3);
+    padding-bottom: getPadding(3);
+
+    background-color: getColor("principal", 6);
+    color: getColor("blanco", 1);
+
+    border-color: getColor("principal", 6);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: getBorderRadius(3);
+
+    font-family: getFontFamily(principal);
+    font-size: getFontSize(3);
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    @include shadow(1);
+
+    &--secundario {
+        color: getColor("principal", 6);
+        background-color: getColor("blanco", 1);
+    }
+
+    &--grande{
+        padding-left: getPadding(8);
+        padding-right: getPadding(8);
+        padding-top: getPadding(4);
+        padding-bottom: getPadding(4);
+        font-size: getFontSize(5);
+    }
+    */
+}

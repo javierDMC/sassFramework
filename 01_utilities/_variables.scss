@@ -1,0 +1,48 @@
+$paddings : (0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px);
+
+$margins : (0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px);
+
+$font-sizes : (12px, 14px, 16px, 18px, 20px, 24px, 30px, 36px, 64px);
+
+$border-radius : (0px, 2px, 4px, 6px, 8px, 16px);
+
+$shadows : ("0 1px 3px hsla(0, 0%, 2%)", "0 4px 6px hsla(0, 0%, 50%)", "0 5px 15px hsla(0, 0%, 50%)", "0 10px 24px hsla(0, 0%, 50%)", "0 15px 35px hsla(0, 0%, 50%)");
+
+$font-family: (
+   "principal": "Arial",
+   "alternativa": "Time News Roman",
+);
+
+
+$colores: (
+   "principal": (#FFFFFF, #C8DAFE, #8FBAFE, #579DFF, #1F87FF, #0073E6, #015FAD, #024474, #02263C),
+   "alternativo": (#FFFFFF, #FCE7CA, #F8CD9B, #F3AD68, #ED8835, #D96512, #AC470C, #792D06, #461502),
+   "gris": (#FFFFFF, #E6E6E6, #C9C9C9, #B0B0B0, #949494, #7A7A7A, #5E5E5E, #454545, #292929),
+   "blanco": (#FFFFFF, #FCFCFC, #FAFAFA, #F7F7F7, #F5F5F5, #F2F2F2, #F0F0F0, #EDEDED, #EBEBEB),
+   "negro" : (#000000),
+   "rojo": (#FFFFFF, #FDDDD9, #FAB8B2, #F8918C, #F56666, #F3453F, #F02B19, #D3250D, #AD260B),
+   "verde": (#F4FBF8, #CBECDD, #9EDBBD, #75CC9E, #49BC78, #37955B, #27683C, #173F23, #07130A),
+   "azul": (#FFFFFF, #C7DAFF, #8FBAFF, #579DFF, #1F87FF, #0073E6, #005FAD, #004475, #00273D),
+   "amarillo": (#FFFFFF, #FAF7D1, #F6EBA7, #F1DD79, #ECC94B, #E7B51D, #C28E14, #946810, #66430B)
+);
+
+$texto:(
+   "parrafo":(
+      "font-family":"Arial",
+      "font-sizes":(
+         "s":40px,
+         "m":45px,
+         "l":50px,
+         "xl":60px,
+      )
+   ),
+   "titulo":(
+      "font-family":"Times New Roman",
+      "font-sizes":(
+         "xs":40px,
+         "s":45px,
+         "m":50px,
+         "l":60px,
+      )
+   )
+)

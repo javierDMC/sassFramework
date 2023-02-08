@@ -1,0 +1,118 @@
+//*******PADDING********//
+@function getPadding($key) {
+  @return nth($paddings, $key);
+}
+
+/*esta funcion crea una variable llamada $paddingKeys, donde vamos a almacenar
+un valor por cada elemento de la longitud de la lista de variables de paddings*/
+@function getPaddingKeys() {
+  $paddingKeys: ();
+
+  @for $i from 0 to length($paddings) {
+    $paddingKeys: append($paddingKeys, $i);
+  }
+
+  @return $paddingKeys;
+}
+
+
+//*******MARGIN********//
+@function getMargin($key) {
+  @return nth($margins, $key);
+}
+
+@function getMarginKeys() {
+  $marginKeys: ();
+
+  @for $i from 0 to length($margins) {
+    $marginKeys: append($marginKeys, $i);
+  }
+
+  @return $marginKeys;
+}
+
+
+//*******FONT-SIZE********//
+@function getFontSize($key) {
+  @return nth($font-sizes, $key);
+}
+
+@function getFontSizeKeys() {
+  $fontSizeKeys: ();
+
+  @for $i from 0 to length($font-sizes) {
+    $fontSizeKeys: append($fontSizeKeys, $i);
+  }
+
+  @return $fontSizeKeys;
+}
+
+
+//*******BORDER-RADIUS********//
+@function getBorderRadius($key) {
+  @return nth($border-radius, $key);
+}
+
+@function getBorderRadiusKeys() {
+  $borderRadiousKeys: ();
+
+  @for $i from 0 to length($border-radius) {
+    $borderRadiousKeys: append($borderRadiousKeys, $i);
+  }
+
+  @return $borderRadiousKeys;
+}
+
+
+//*******BOX-SHADOW********//
+@function getBoxShadow($key) {
+  @return unquote(nth($shadows, $key + 1));
+}
+
+@function getBoxShadowKeys() {
+  $boxShadowsKeys: ();
+
+  @for $i from 0 to length($shadows) {
+    $boxShadowsKeys: append($boxShadowsKeys, $i);
+  }
+
+  @return $boxShadowsKeys;
+}
+
+
+//*******FONT-FAMILY********//
+@function getFontFamily($key) {
+  @return unquote(map-get($font-family, "" + $key));
+}
+
+
+//*******COLOR-VARIANTS********//
+@function getColorVariants($key) {
+  @return map-get($colores, $key);
+}
+
+
+//*******COLORS********//
+@function getColor($key, $index) {
+  @return nth(map-get($colores, $key), $index);
+}
+
+
+//*******TEXT-FAMILY********//
+@function getTextFamily($key) {
+  $textType: map-get($texto, $key);
+  @return map-get($textType, "font-family");
+}
+
+
+//*******TEXT-SIZE********//
+@function getTextSizes($key) {
+  $textType: map-get($texto, $key);
+  @return map-get($textType, "font-sizes");
+}
+
+
+//*******TEXT-KEYS********//
+@function getTextKeys() {
+  @return map-keys($texto);
+}

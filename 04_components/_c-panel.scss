@@ -1,0 +1,50 @@
+.c-panel {
+    width: 275px;
+    height: 325px;
+    @include shadow(1);
+
+    /****ejemplo de propiedades de c-panel****
+
+    background-color: getColor("gris", 2);
+    color: getColor("black", 1);
+
+    border: 1px solid getColor("gris", 8);
+    margin-bottom: getMargin(8);
+
+    font-family: getFontFamily(principal);
+    text-align: center;
+    
+    &__cabecera {
+        font-weight: bold;
+        font-size: getFontSize(5);
+        
+        border-width: 1px;
+        border-style: solid;
+        border-color: getColor("gris", 5);
+
+        padding-left: getPadding(8);
+        padding-right: getPadding(8);
+        padding-top: getPadding(4);
+        padding-bottom: getPadding(4);
+
+    }
+
+    &__contenido {
+        padding: getPadding(12);
+    }
+
+    &__titulo {
+        font-size: getFontSize(8);
+        font-weight: bold;
+        
+        color: getColor("principal", 6);
+        margin-bottom: getMargin(8);
+    }
+
+    &__texto{
+        margin-bottom: getMargin(12);
+        line-height: 1.5em;
+        font-size: getFontSize(2);
+    }*/
+    
+}
