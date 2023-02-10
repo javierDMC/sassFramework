@@ -15,3 +15,13 @@
         }
     }
 }
+
+@each $breakKey, $breakValue in $breakPoints{
+    @media (min-width: $breakValue){
+        @each $key in getFontSizeKeys() {
+            .g--font-size-#{$key+1}\@#{$breakKey}{
+                font-size: getFontSize($key+1);
+            }
+        }
+    }
+  }
