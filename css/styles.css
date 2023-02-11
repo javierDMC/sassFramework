@@ -460,6 +460,15 @@ html {
   font-size: 14px;
 }
 
+.c-titulo {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .c-titulo {
+    font-size: 55px;
+  }
+}
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
 la variable $valor será igual a getPadding($clave+1)
 ahora, por cada clave, va a generar una clase css llamada g--padding-?
@@ -1462,6 +1471,42 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
 .g--titulo-l {
   font-family: "Times New Roman";
   font-size: 60px;
+}
+
+.g--font-size-0 {
+  font-size: 12px;
+}
+
+.g--font-size-1 {
+  font-size: 14px;
+}
+
+.g--font-size-2 {
+  font-size: 16px;
+}
+
+.g--font-size-3 {
+  font-size: 18px;
+}
+
+.g--font-size-4 {
+  font-size: 20px;
+}
+
+.g--font-size-5 {
+  font-size: 24px;
+}
+
+.g--font-size-6 {
+  font-size: 30px;
+}
+
+.g--font-size-7 {
+  font-size: 36px;
+}
+
+.g--font-size-8 {
+  font-size: 64px;
 }
 
 @media (min-width: 576px) {
