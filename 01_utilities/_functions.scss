@@ -86,13 +86,28 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 }
 
 
+@function getColorsKeys() {
+  @return map-keys($colores);
+}
+
+@function getColorsKeyByVariant($variantKey){
+  $colorVariantKey: ();
+  $colorVariantValues: map-get($colores, $variantKey);
+
+  @for $i from 0 to length($colorVariantValues) {
+    $colorVariantKey: append($colorVariantKey, $i);
+  }
+
+  @return $colorVariantKey;
+}
+
 //*******COLOR-VARIANTS********//
 @function getColorVariants($key) {
   @return map-get($colores, $key);
 }
 
 
-//*******COLORS********//
+//*******COLOR VALUE********//
 @function getColor($key, $index) {
   @return nth(map-get($colores, $key), $index);
 }
@@ -115,4 +130,19 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 //*******TEXT-KEYS********//
 @function getTextKeys() {
   @return map-keys($texto);
+}
+
+//*******TEXT-ALIGN********//
+@function getTextAlign($key) {
+  @return map-get($font-family, "" + $key);
+}
+
+@function getTextAlignKeys() {
+  $textAlignKeys: ();
+
+  @for $i from 0 to length($text-align) {
+    $textAlignKeys: append($textAlignKeys, $i);
+  }
+
+  @return $textAlignKeys;
 }

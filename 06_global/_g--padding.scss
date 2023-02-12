@@ -35,3 +35,38 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
         padding-right: $valor;
     }
 }
+
+@each $breakKey, $breakValue in $breakPoints{
+    @media (min-width: $breakValue){
+        @each $key in getPaddingKeys() {
+            .g--padding-#{$key+1}\@#{$breakKey}{
+                padding: getPadding($key+1);
+            }
+            .g--padding-left-#{$key+1}\@#{$breakKey} {
+                padding-left: getPadding($key+1);
+            }
+        
+            .g--padding-right-#{$key+1}\@#{$breakKey} {
+                padding-right: getPadding($key+1);
+            }
+        
+            .g--padding-top-#{$key+1}\@#{$breakKey} {
+                padding-top: getPadding($key+1);
+            }
+        
+            .g--padding-bottom-#{$key+1}\@#{$breakKey} {
+                padding-bottom: getPadding($key+1);
+            }
+        
+            .g--padding-vertical-#{$key+1}\@#{$breakKey} {
+                padding-top: getPadding($key+1);
+                padding-bottom: getPadding($key+1);
+            }
+        
+            .g--Padding-horizontal-#{$key+1}\@#{$breakKey} {
+                Padding-left: getPadding($key+1);
+                Padding-right: getPadding($key+1);
+            }
+        }
+    }
+}

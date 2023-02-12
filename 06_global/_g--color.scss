@@ -1,0 +1,14 @@
+// @function 
+
+@each $breakKey, $breakValue in $breakPoints{
+    @media(min-width: $breakValue){
+        @each $name in getColorsKeys(){
+            @each $variantKey in getColorsKeyByVariant($name){
+                .g--color-#{$name}-#{$variantKey+1}\@#{$breakKey}{
+                    color: getColor($name, $variantKey+1)
+                }
+            }
+            
+        }
+    }
+}
