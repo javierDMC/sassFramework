@@ -1471,3 +1471,7 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+html {
+  font-size:24px;
+}
