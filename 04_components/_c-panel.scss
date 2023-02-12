@@ -3,7 +3,7 @@
     height: 325px;
     @include shadow(1);
 
-    /****ejemplo de propiedades de c-panel****
+    //ejemplo de propiedades de c-panel
 
     background-color: getColor("gris", 2);
     color: getColor("black", 1);
@@ -45,6 +45,10 @@
         margin-bottom: getMargin(12);
         line-height: 1.5em;
         font-size: getFontSize(2);
-    }*/
+    }
+
+    &--borderTop{
+        border-top: 7px solid getColor("alternativo",6);
+    }
     
 }

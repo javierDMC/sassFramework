@@ -37,4 +37,33 @@
         font-size: getFontSize(5);
     }
     */
+
+    cursor: pointer;
+    font-family: getFontFamily(principal);
+    font-size: getFontSize(3);
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: getPadding(6);
+
+    &--transparent{
+        color: getColor("principal",6);
+    }
+
+    &--outline-principal{
+        color: getColor("principal",6);
+        border-color: getColor("principal",6);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: getBorderRadius(3);
+        
+    }
+
+    &--outline-alternativo{
+        color: getColor("alternativo",6);
+        border-color: getColor("alternativo",6);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: getBorderRadius(3);
+    }
 }

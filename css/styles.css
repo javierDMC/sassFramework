@@ -389,6 +389,19 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
+.l-flex {
+  display: flex;
+}
+.l-flex--jc-fs {
+  justify-content: flex-start;
+}
+.l-flex--jc-fe {
+  justify-content: flex-end;
+}
+.l-flex--jc--sb {
+  justify-content: space-between;
+}
+
 .c-button {
   display: inline-block;
   /****ejemplo propiedades del c-button****
@@ -427,6 +440,30 @@ html {
       font-size: getFontSize(5);
   }
   */
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 12px;
+}
+.c-button--transparent {
+  color: #0073E6;
+}
+.c-button--outline-principal {
+  color: #0073E6;
+  border-color: #0073E6;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+.c-button--outline-alternativo {
+  color: #D96512;
+  border-color: #D96512;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
 }
 
 .c-panel {
@@ -435,49 +472,39 @@ html {
   -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
   -moz-box-shadow: 0 4px 6px hsla(0, 0%, 50%);
   box-shadow: 0 4px 6px hsla(0, 0%, 50%);
-  /****ejemplo de propiedades de c-panel****
-
-  background-color: getColor("gris", 2);
-  color: getColor("black", 1);
-
-  border: 1px solid getColor("gris", 8);
-  margin-bottom: getMargin(8);
-
-  font-family: getFontFamily(principal);
+  background-color: #E6E6E6;
+  border: 1px solid #454545;
+  margin-bottom: 20px;
+  font-family: Arial;
   text-align: center;
-
-  &__cabecera {
-      font-weight: bold;
-      font-size: getFontSize(5);
-
-      border-width: 1px;
-      border-style: solid;
-      border-color: getColor("gris", 5);
-
-      padding-left: getPadding(8);
-      padding-right: getPadding(8);
-      padding-top: getPadding(4);
-      padding-bottom: getPadding(4);
-
-  }
-
-  &__contenido {
-      padding: getPadding(12);
-  }
-
-  &__titulo {
-      font-size: getFontSize(8);
-      font-weight: bold;
-
-      color: getColor("principal", 6);
-      margin-bottom: getMargin(8);
-  }
-
-  &__texto{
-      margin-bottom: getMargin(12);
-      line-height: 1.5em;
-      font-size: getFontSize(2);
-  }*/
+}
+.c-panel__cabecera {
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #949494;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.c-panel__contenido {
+  padding: 48px;
+}
+.c-panel__titulo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0073E6;
+  margin-bottom: 20px;
+}
+.c-panel__texto {
+  margin-bottom: 48px;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.c-panel--borderTop {
+  border-top: 7px solid #D96512;
 }
 
 .g--border-radius-0 {
@@ -2542,74 +2569,74 @@ html {
   }
 }
 .g--display-flex {
-  display: "flex";
+  display: flex;
 }
 
 .g--display-block {
-  display: "block";
+  display: block;
 }
 
 .g--display-grid {
-  display: "grid";
+  display: grid;
 }
 
 .g--display-flow {
-  display: "flow";
+  display: flow;
 }
 
 .g--display-inline {
-  display: "inline";
+  display: inline;
 }
 
 @media (min-width: 576px) {
   .g--display-flex\@movil {
-    display: "flex";
+    display: flex;
   }
   .g--display-block\@movil {
-    display: "block";
+    display: block;
   }
   .g--display-grid\@movil {
-    display: "grid";
+    display: grid;
   }
   .g--display-flow\@movil {
-    display: "flow";
+    display: flow;
   }
   .g--display-inline\@movil {
-    display: "inline";
+    display: inline;
   }
 }
 @media (min-width: 768px) {
   .g--display-flex\@tablet {
-    display: "flex";
+    display: flex;
   }
   .g--display-block\@tablet {
-    display: "block";
+    display: block;
   }
   .g--display-grid\@tablet {
-    display: "grid";
+    display: grid;
   }
   .g--display-flow\@tablet {
-    display: "flow";
+    display: flow;
   }
   .g--display-inline\@tablet {
-    display: "inline";
+    display: inline;
   }
 }
 @media (min-width: 992px) {
   .g--display-flex\@desktop {
-    display: "flex";
+    display: flex;
   }
   .g--display-block\@desktop {
-    display: "block";
+    display: block;
   }
   .g--display-grid\@desktop {
-    display: "grid";
+    display: grid;
   }
   .g--display-flow\@desktop {
-    display: "flow";
+    display: flow;
   }
   .g--display-inline\@desktop {
-    display: "inline";
+    display: inline;
   }
 }
 .g--font-size-0 {
@@ -4533,61 +4560,61 @@ html {
   }
 }
 .g--overflow-visible {
-  overflow: "visible";
+  overflow: visible;
 }
 
 .g--overflow-hidden {
-  overflow: "hidden";
+  overflow: hidden;
 }
 
 .g--overflow-scroll {
-  overflow: "scroll";
+  overflow: scroll;
 }
 
 .g--overflow-auto {
-  overflow: "auto";
+  overflow: auto;
 }
 
 @media (min-width: 576px) {
   .g--overflow-visible\@movil {
-    overflow: "visible";
+    overflow: visible;
   }
   .g--overflow-hidden\@movil {
-    overflow: "hidden";
+    overflow: hidden;
   }
   .g--overflow-scroll\@movil {
-    overflow: "scroll";
+    overflow: scroll;
   }
   .g--overflow-auto\@movil {
-    overflow: "auto";
+    overflow: auto;
   }
 }
 @media (min-width: 768px) {
   .g--overflow-visible\@tablet {
-    overflow: "visible";
+    overflow: visible;
   }
   .g--overflow-hidden\@tablet {
-    overflow: "hidden";
+    overflow: hidden;
   }
   .g--overflow-scroll\@tablet {
-    overflow: "scroll";
+    overflow: scroll;
   }
   .g--overflow-auto\@tablet {
-    overflow: "auto";
+    overflow: auto;
   }
 }
 @media (min-width: 992px) {
   .g--overflow-visible\@desktop {
-    overflow: "visible";
+    overflow: visible;
   }
   .g--overflow-hidden\@desktop {
-    overflow: "hidden";
+    overflow: hidden;
   }
   .g--overflow-scroll\@desktop {
-    overflow: "scroll";
+    overflow: scroll;
   }
   .g--overflow-auto\@desktop {
-    overflow: "auto";
+    overflow: auto;
   }
 }
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
@@ -6185,74 +6212,132 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
   }
 }
 .g--position-static {
-  position: "static";
+  position: static;
 }
 
 .g--position-relative {
-  position: "relative";
+  position: relative;
 }
 
 .g--position-fixed {
-  position: "fixed";
+  position: fixed;
 }
 
 .g--position-absolute {
-  position: "absolute";
+  position: absolute;
 }
 
 .g--position-sticky {
-  position: "sticky";
+  position: sticky;
 }
 
 @media (min-width: 576px) {
   .g--position-static\@movil {
-    position: "static";
+    position: static;
   }
   .g--position-relative\@movil {
-    position: "relative";
+    position: relative;
   }
   .g--position-fixed\@movil {
-    position: "fixed";
+    position: fixed;
   }
   .g--position-absolute\@movil {
-    position: "absolute";
+    position: absolute;
   }
   .g--position-sticky\@movil {
-    position: "sticky";
+    position: sticky;
   }
 }
 @media (min-width: 768px) {
   .g--position-static\@tablet {
-    position: "static";
+    position: static;
   }
   .g--position-relative\@tablet {
-    position: "relative";
+    position: relative;
   }
   .g--position-fixed\@tablet {
-    position: "fixed";
+    position: fixed;
   }
   .g--position-absolute\@tablet {
-    position: "absolute";
+    position: absolute;
   }
   .g--position-sticky\@tablet {
-    position: "sticky";
+    position: sticky;
   }
 }
 @media (min-width: 992px) {
   .g--position-static\@desktop {
-    position: "static";
+    position: static;
   }
   .g--position-relative\@desktop {
-    position: "relative";
+    position: relative;
   }
   .g--position-fixed\@desktop {
-    position: "fixed";
+    position: fixed;
   }
   .g--position-absolute\@desktop {
-    position: "absolute";
+    position: absolute;
   }
   .g--position-sticky\@desktop {
-    position: "sticky";
+    position: sticky;
+  }
+}
+.g--text-align-0 {
+  text-align: center;
+}
+
+.g--text-align-1 {
+  text-align: left;
+}
+
+.g--text-align-2 {
+  text-align: right;
+}
+
+.g--text-align-3 {
+  text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .g--text-align-1\@movil {
+    text-align: center;
+  }
+  .g--text-align-2\@movil {
+    text-align: left;
+  }
+  .g--text-align-3\@movil {
+    text-align: right;
+  }
+  .g--text-align-4\@movil {
+    text-align: justify;
+  }
+}
+@media (min-width: 768px) {
+  .g--text-align-1\@tablet {
+    text-align: center;
+  }
+  .g--text-align-2\@tablet {
+    text-align: left;
+  }
+  .g--text-align-3\@tablet {
+    text-align: right;
+  }
+  .g--text-align-4\@tablet {
+    text-align: justify;
+  }
+}
+@media (min-width: 992px) {
+  .g--text-align-1\@desktop {
+    text-align: center;
+  }
+  .g--text-align-2\@desktop {
+    text-align: left;
+  }
+  .g--text-align-3\@desktop {
+    text-align: right;
+  }
+  .g--text-align-4\@desktop {
+    text-align: justify;
   }
 }
 .g--parrafo-s {

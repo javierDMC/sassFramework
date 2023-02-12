@@ -134,7 +134,7 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
 //*******TEXT-ALIGN********//
 @function getTextAlign($key) {
-  @return map-get($font-family, "" + $key);
+  @return nth($text-align, $key);
 }
 
 @function getTextAlignKeys() {
