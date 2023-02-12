@@ -250,3 +250,32 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $heightKeys;
 }
+
+//*******VIEWPORT-WIDTH&HEIGHT********//
+@function getViewportWidth($key) {
+  @return nth($viewport-witdth, $key);
+}
+
+@function getViewportWidthKeys() {
+  $viewportWidthKeys: ();
+
+  @for $i from 0 to length($viewport-witdth) {
+    $viewportWidthKeys: append($viewportWidthKeys, $i);
+  }
+
+  @return $viewportWidthKeys;
+}
+
+@function getViewportHeight($key) {
+  @return nth($viewport-height, $key);
+}
+
+@function getViewportHeightKeys() {
+  $viewportHeightKeys: ();
+
+  @for $i from 0 to length($viewport-height) {
+    $viewportHeightKeys: append($viewportHeightKeys, $i);
+  }
+
+  @return $viewportHeightKeys;
+}

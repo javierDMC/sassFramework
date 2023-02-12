@@ -1,0 +1,17 @@
+@each $clave in getViewportWidthKeys() {
+    $valor: getViewportWidth($clave + 1);
+  
+    .g--viewport-width-#{$clave} {
+      width: $valor;
+    }
+  }
+  
+  @each $breakKey, $breakValue in $breakPoints {
+    @media (min-width: $breakValue) {
+      @each $key in getViewportWidthKeys() {
+        .g--viewport-width-#{$key + 1}\@#{$breakKey} {
+          width: getViewportWidth($key + 1);
+        }
+      }
+    }
+  }

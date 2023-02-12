@@ -6295,6 +6295,252 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
   font-size: 60px;
 }
 
+.g--viewport-height-0 {
+  height: 10px;
+}
+
+.g--viewport-height-1 {
+  height: 50px;
+}
+
+.g--viewport-height-2 {
+  height: 100px;
+}
+
+.g--viewport-height-3 {
+  height: 150px;
+}
+
+.g--viewport-height-4 {
+  height: 200px;
+}
+
+.g--viewport-height-5 {
+  height: 300px;
+}
+
+.g--viewport-height-6 {
+  height: 500px;
+}
+
+.g--viewport-height-7 {
+  height: 750px;
+}
+
+.g--viewport-height-8 {
+  height: 1000px;
+}
+
+@media (min-width: 576px) {
+  .g--viewport-height-1\@movil {
+    height: 10px;
+  }
+  .g--viewport-height-2\@movil {
+    height: 50px;
+  }
+  .g--viewport-height-3\@movil {
+    height: 100px;
+  }
+  .g--viewport-height-4\@movil {
+    height: 150px;
+  }
+  .g--viewport-height-5\@movil {
+    height: 200px;
+  }
+  .g--viewport-height-6\@movil {
+    height: 300px;
+  }
+  .g--viewport-height-7\@movil {
+    height: 500px;
+  }
+  .g--viewport-height-8\@movil {
+    height: 750px;
+  }
+  .g--viewport-height-9\@movil {
+    height: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  .g--viewport-height-1\@tablet {
+    height: 10px;
+  }
+  .g--viewport-height-2\@tablet {
+    height: 50px;
+  }
+  .g--viewport-height-3\@tablet {
+    height: 100px;
+  }
+  .g--viewport-height-4\@tablet {
+    height: 150px;
+  }
+  .g--viewport-height-5\@tablet {
+    height: 200px;
+  }
+  .g--viewport-height-6\@tablet {
+    height: 300px;
+  }
+  .g--viewport-height-7\@tablet {
+    height: 500px;
+  }
+  .g--viewport-height-8\@tablet {
+    height: 750px;
+  }
+  .g--viewport-height-9\@tablet {
+    height: 1000px;
+  }
+}
+@media (min-width: 992px) {
+  .g--viewport-height-1\@desktop {
+    height: 10px;
+  }
+  .g--viewport-height-2\@desktop {
+    height: 50px;
+  }
+  .g--viewport-height-3\@desktop {
+    height: 100px;
+  }
+  .g--viewport-height-4\@desktop {
+    height: 150px;
+  }
+  .g--viewport-height-5\@desktop {
+    height: 200px;
+  }
+  .g--viewport-height-6\@desktop {
+    height: 300px;
+  }
+  .g--viewport-height-7\@desktop {
+    height: 500px;
+  }
+  .g--viewport-height-8\@desktop {
+    height: 750px;
+  }
+  .g--viewport-height-9\@desktop {
+    height: 1000px;
+  }
+}
+.g--viewport-width-0 {
+  width: 10vw;
+}
+
+.g--viewport-width-1 {
+  width: 20vw;
+}
+
+.g--viewport-width-2 {
+  width: 30vw;
+}
+
+.g--viewport-width-3 {
+  width: 40vw;
+}
+
+.g--viewport-width-4 {
+  width: 50vw;
+}
+
+.g--viewport-width-5 {
+  width: 60vw;
+}
+
+.g--viewport-width-6 {
+  width: 70vw;
+}
+
+.g--viewport-width-7 {
+  width: 80vw;
+}
+
+.g--viewport-width-8 {
+  width: 90vw;
+}
+
+@media (min-width: 576px) {
+  .g--viewport-width-1\@movil {
+    width: 10vw;
+  }
+  .g--viewport-width-2\@movil {
+    width: 20vw;
+  }
+  .g--viewport-width-3\@movil {
+    width: 30vw;
+  }
+  .g--viewport-width-4\@movil {
+    width: 40vw;
+  }
+  .g--viewport-width-5\@movil {
+    width: 50vw;
+  }
+  .g--viewport-width-6\@movil {
+    width: 60vw;
+  }
+  .g--viewport-width-7\@movil {
+    width: 70vw;
+  }
+  .g--viewport-width-8\@movil {
+    width: 80vw;
+  }
+  .g--viewport-width-9\@movil {
+    width: 90vw;
+  }
+}
+@media (min-width: 768px) {
+  .g--viewport-width-1\@tablet {
+    width: 10vw;
+  }
+  .g--viewport-width-2\@tablet {
+    width: 20vw;
+  }
+  .g--viewport-width-3\@tablet {
+    width: 30vw;
+  }
+  .g--viewport-width-4\@tablet {
+    width: 40vw;
+  }
+  .g--viewport-width-5\@tablet {
+    width: 50vw;
+  }
+  .g--viewport-width-6\@tablet {
+    width: 60vw;
+  }
+  .g--viewport-width-7\@tablet {
+    width: 70vw;
+  }
+  .g--viewport-width-8\@tablet {
+    width: 80vw;
+  }
+  .g--viewport-width-9\@tablet {
+    width: 90vw;
+  }
+}
+@media (min-width: 992px) {
+  .g--viewport-width-1\@desktop {
+    width: 10vw;
+  }
+  .g--viewport-width-2\@desktop {
+    width: 20vw;
+  }
+  .g--viewport-width-3\@desktop {
+    width: 30vw;
+  }
+  .g--viewport-width-4\@desktop {
+    width: 40vw;
+  }
+  .g--viewport-width-5\@desktop {
+    width: 50vw;
+  }
+  .g--viewport-width-6\@desktop {
+    width: 60vw;
+  }
+  .g--viewport-width-7\@desktop {
+    width: 70vw;
+  }
+  .g--viewport-width-8\@desktop {
+    width: 80vw;
+  }
+  .g--viewport-width-9\@desktop {
+    width: 90vw;
+  }
+}
 .g--width-0 {
   width: 10px;
 }
