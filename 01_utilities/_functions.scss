@@ -206,3 +206,18 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $positionKeys;
 }
+
+//*******Z-INDEX********//
+@function getZ-Index($key) {
+  @return nth($z-index, $key);
+}
+
+@function getZ-IndexKeys() {
+  $z-indexKeys: ();
+
+  @for $i from 0 to length($z-index) {
+    $z-indexKeys: append($z-indexKeys, $i);
+  }
+
+  @return $z-indexKeys;
+}
