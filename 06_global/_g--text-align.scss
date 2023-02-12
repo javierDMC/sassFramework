@@ -1,0 +1,15 @@
+@each $breakPointKey in getBreakPointKeys(){
+    $breakPointValue: getBreakPoint($breakPointKey);
+    $modificador: "";
+    @if($breakPointKey != ""){
+        $modificador: "\\@#{$breakPointKey}";
+    }
+    @media (min-width: $breakPointValue){
+        @each $key in getTextAlign(){
+            $value: getTextAlign($key);
+        .g--text-align-#{$value}#{$modificador}{
+            text-align: $value;
+        }
+        }
+    }
+}
