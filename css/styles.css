@@ -2735,6 +2735,129 @@ html {
     font-size: 64px;
   }
 }
+.g--height-0 {
+  height: 10px;
+}
+
+.g--height-1 {
+  height: 50px;
+}
+
+.g--height-2 {
+  height: 100px;
+}
+
+.g--height-3 {
+  height: 150px;
+}
+
+.g--height-4 {
+  height: 200px;
+}
+
+.g--height-5 {
+  height: 300px;
+}
+
+.g--height-6 {
+  height: 500px;
+}
+
+.g--height-7 {
+  height: 750px;
+}
+
+.g--height-8 {
+  height: 1000px;
+}
+
+@media (min-width: 576px) {
+  .g--height-1\@movil {
+    height: 10px;
+  }
+  .g--height-2\@movil {
+    height: 50px;
+  }
+  .g--height-3\@movil {
+    height: 100px;
+  }
+  .g--height-4\@movil {
+    height: 150px;
+  }
+  .g--height-5\@movil {
+    height: 200px;
+  }
+  .g--height-6\@movil {
+    height: 300px;
+  }
+  .g--height-7\@movil {
+    height: 500px;
+  }
+  .g--height-8\@movil {
+    height: 750px;
+  }
+  .g--height-9\@movil {
+    height: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  .g--height-1\@tablet {
+    height: 10px;
+  }
+  .g--height-2\@tablet {
+    height: 50px;
+  }
+  .g--height-3\@tablet {
+    height: 100px;
+  }
+  .g--height-4\@tablet {
+    height: 150px;
+  }
+  .g--height-5\@tablet {
+    height: 200px;
+  }
+  .g--height-6\@tablet {
+    height: 300px;
+  }
+  .g--height-7\@tablet {
+    height: 500px;
+  }
+  .g--height-8\@tablet {
+    height: 750px;
+  }
+  .g--height-9\@tablet {
+    height: 1000px;
+  }
+}
+@media (min-width: 992px) {
+  .g--height-1\@desktop {
+    height: 10px;
+  }
+  .g--height-2\@desktop {
+    height: 50px;
+  }
+  .g--height-3\@desktop {
+    height: 100px;
+  }
+  .g--height-4\@desktop {
+    height: 150px;
+  }
+  .g--height-5\@desktop {
+    height: 200px;
+  }
+  .g--height-6\@desktop {
+    height: 300px;
+  }
+  .g--height-7\@desktop {
+    height: 500px;
+  }
+  .g--height-8\@desktop {
+    height: 750px;
+  }
+  .g--height-9\@desktop {
+    height: 1000px;
+  }
+}
 .g--margin-0 {
   margin: 0px;
 }
@@ -6172,6 +6295,129 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
   font-size: 60px;
 }
 
+.g--width-0 {
+  width: 10px;
+}
+
+.g--width-1 {
+  width: 50px;
+}
+
+.g--width-2 {
+  width: 100px;
+}
+
+.g--width-3 {
+  width: 150px;
+}
+
+.g--width-4 {
+  width: 200px;
+}
+
+.g--width-5 {
+  width: 300px;
+}
+
+.g--width-6 {
+  width: 500px;
+}
+
+.g--width-7 {
+  width: 750px;
+}
+
+.g--width-8 {
+  width: 1000px;
+}
+
+@media (min-width: 576px) {
+  .g--width-1\@movil {
+    width: 10px;
+  }
+  .g--width-2\@movil {
+    width: 50px;
+  }
+  .g--width-3\@movil {
+    width: 100px;
+  }
+  .g--width-4\@movil {
+    width: 150px;
+  }
+  .g--width-5\@movil {
+    width: 200px;
+  }
+  .g--width-6\@movil {
+    width: 300px;
+  }
+  .g--width-7\@movil {
+    width: 500px;
+  }
+  .g--width-8\@movil {
+    width: 750px;
+  }
+  .g--width-9\@movil {
+    width: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  .g--width-1\@tablet {
+    width: 10px;
+  }
+  .g--width-2\@tablet {
+    width: 50px;
+  }
+  .g--width-3\@tablet {
+    width: 100px;
+  }
+  .g--width-4\@tablet {
+    width: 150px;
+  }
+  .g--width-5\@tablet {
+    width: 200px;
+  }
+  .g--width-6\@tablet {
+    width: 300px;
+  }
+  .g--width-7\@tablet {
+    width: 500px;
+  }
+  .g--width-8\@tablet {
+    width: 750px;
+  }
+  .g--width-9\@tablet {
+    width: 1000px;
+  }
+}
+@media (min-width: 992px) {
+  .g--width-1\@desktop {
+    width: 10px;
+  }
+  .g--width-2\@desktop {
+    width: 50px;
+  }
+  .g--width-3\@desktop {
+    width: 100px;
+  }
+  .g--width-4\@desktop {
+    width: 150px;
+  }
+  .g--width-5\@desktop {
+    width: 200px;
+  }
+  .g--width-6\@desktop {
+    width: 300px;
+  }
+  .g--width-7\@desktop {
+    width: 500px;
+  }
+  .g--width-8\@desktop {
+    width: 750px;
+  }
+  .g--width-9\@desktop {
+    width: 1000px;
+  }
+}
 .g--z-index-0 {
   z-index: 1;
 }

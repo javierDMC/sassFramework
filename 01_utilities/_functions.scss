@@ -221,3 +221,32 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $z-indexKeys;
 }
+
+//*******WIDTH&HEIGHT********//
+@function getWidth($key) {
+  @return nth($widthHeight, $key);
+}
+
+@function getWidthKeys() {
+  $widthKeys: ();
+
+  @for $i from 0 to length($widthHeight) {
+    $widthKeys: append($widthKeys, $i);
+  }
+
+  @return $widthKeys;
+}
+
+@function getHeight($key) {
+  @return nth($widthHeight, $key);
+}
+
+@function getHeightKeys() {
+  $heightKeys: ();
+
+  @for $i from 0 to length($widthHeight) {
+    $heightKeys: append($heightKeys, $i);
+  }
+
+  @return $heightKeys;
+}
