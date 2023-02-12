@@ -146,3 +146,18 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $textAlignKeys;
 }
+
+//*******DISPLAY********//
+@function getDisplay($key) {
+  @return nth($display, $key);
+}
+
+@function getDisplayKeys() {
+  $displayKeys: ();
+
+  @for $i from 0 to length($display) {
+    $displayKeys: append($displayKeys, $i);
+  }
+
+  @return $displayKeys;
+}
