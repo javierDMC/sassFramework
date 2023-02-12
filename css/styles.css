@@ -469,6 +469,19 @@ html {
     font-size: 55px;
   }
 }
+.c-image {
+  display: flex;
+  border-color: brown;
+  border-width: 3px;
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .c-imagen {
+    font-size: 55px;
+    border-color: brown;
+  }
+}
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
 la variable $valor será igual a getPadding($clave+1)
 ahora, por cada clave, va a generar una clase css llamada g--padding-?
