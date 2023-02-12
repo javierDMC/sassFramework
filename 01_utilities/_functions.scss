@@ -176,3 +176,18 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $opacityKeys;
 }
+
+//*******OVERFLOW ********//
+@function getOverflow($key) {
+  @return nth($overflow, $key);
+}
+
+@function getOverflowKeys() {
+  $overflowKeys: ();
+
+  @for $i from 0 to length($overflow) {
+    $overflowKeys: append($overflowKeys, $i);
+  }
+
+  @return $overflowKeys;
+}

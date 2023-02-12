@@ -1,0 +1,18 @@
+@each $clave in getOverflowKeys(){
+    $valor: getOverflow($clave+1);
+
+    .g--overflow-#{$valor}{
+        overflow: $valor;
+    }
+
+}
+
+@each $breakKey, $breakValue in $breakPoints{
+    @media (min-width: $breakValue){
+        @each $key, $value in getOverflowKeys() {
+            .g--overflow-#{getOverflow($key+1)}\@#{$breakKey}{
+                overflow: getOverflow($key+1);
+            }
+        }
+    }
+}

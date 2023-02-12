@@ -4409,6 +4409,64 @@ html {
     opacity: 1;
   }
 }
+.g--overflow-visible {
+  overflow: "visible";
+}
+
+.g--overflow-hidden {
+  overflow: "hidden";
+}
+
+.g--overflow-scroll {
+  overflow: "scroll";
+}
+
+.g--overflow-auto {
+  overflow: "auto";
+}
+
+@media (min-width: 576px) {
+  .g--overflow-visible\@movil {
+    overflow: "visible";
+  }
+  .g--overflow-hidden\@movil {
+    overflow: "hidden";
+  }
+  .g--overflow-scroll\@movil {
+    overflow: "scroll";
+  }
+  .g--overflow-auto\@movil {
+    overflow: "auto";
+  }
+}
+@media (min-width: 768px) {
+  .g--overflow-visible\@tablet {
+    overflow: "visible";
+  }
+  .g--overflow-hidden\@tablet {
+    overflow: "hidden";
+  }
+  .g--overflow-scroll\@tablet {
+    overflow: "scroll";
+  }
+  .g--overflow-auto\@tablet {
+    overflow: "auto";
+  }
+}
+@media (min-width: 992px) {
+  .g--overflow-visible\@desktop {
+    overflow: "visible";
+  }
+  .g--overflow-hidden\@desktop {
+    overflow: "hidden";
+  }
+  .g--overflow-scroll\@desktop {
+    overflow: "scroll";
+  }
+  .g--overflow-auto\@desktop {
+    overflow: "auto";
+  }
+}
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
 la variable $valor será igual a getPadding($clave+1)
 ahora, por cada clave, va a generar una clase css llamada g--padding-?
