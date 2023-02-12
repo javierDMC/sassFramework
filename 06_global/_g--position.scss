@@ -1,0 +1,18 @@
+@each $clave in getPositionKeys(){
+    $valor: getPosition($clave+1);
+
+    .g--position-#{$valor}{
+        position: $valor;
+    }
+
+}
+
+@each $breakKey, $breakValue in $breakPoints{
+    @media (min-width: $breakValue){
+        @each $key, $value in getPositionKeys() {
+            .g--position-#{getPosition($key+1)}\@#{$breakKey}{
+                position: getPosition($key+1);
+            }
+        }
+    }
+}

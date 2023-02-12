@@ -6061,6 +6061,77 @@ cuya propiedad va a ser padding y que va a tener de valor lo que le entró*/
     Padding-right: 128px;
   }
 }
+.g--position-static {
+  position: "static";
+}
+
+.g--position-relative {
+  position: "relative";
+}
+
+.g--position-fixed {
+  position: "fixed";
+}
+
+.g--position-absolute {
+  position: "absolute";
+}
+
+.g--position-sticky {
+  position: "sticky";
+}
+
+@media (min-width: 576px) {
+  .g--position-static\@movil {
+    position: "static";
+  }
+  .g--position-relative\@movil {
+    position: "relative";
+  }
+  .g--position-fixed\@movil {
+    position: "fixed";
+  }
+  .g--position-absolute\@movil {
+    position: "absolute";
+  }
+  .g--position-sticky\@movil {
+    position: "sticky";
+  }
+}
+@media (min-width: 768px) {
+  .g--position-static\@tablet {
+    position: "static";
+  }
+  .g--position-relative\@tablet {
+    position: "relative";
+  }
+  .g--position-fixed\@tablet {
+    position: "fixed";
+  }
+  .g--position-absolute\@tablet {
+    position: "absolute";
+  }
+  .g--position-sticky\@tablet {
+    position: "sticky";
+  }
+}
+@media (min-width: 992px) {
+  .g--position-static\@desktop {
+    position: "static";
+  }
+  .g--position-relative\@desktop {
+    position: "relative";
+  }
+  .g--position-fixed\@desktop {
+    position: "fixed";
+  }
+  .g--position-absolute\@desktop {
+    position: "absolute";
+  }
+  .g--position-sticky\@desktop {
+    position: "sticky";
+  }
+}
 .g--parrafo-s {
   font-family: "Arial";
   font-size: 40px;

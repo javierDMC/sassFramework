@@ -177,7 +177,7 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
   @return $opacityKeys;
 }
 
-//*******OVERFLOW ********//
+//*******OVERFLOW********//
 @function getOverflow($key) {
   @return nth($overflow, $key);
 }
@@ -190,4 +190,19 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
   }
 
   @return $overflowKeys;
+}
+
+//*******POSITION********//
+@function getPosition($key) {
+  @return nth($position, $key);
+}
+
+@function getPositionKeys() {
+  $positionKeys: ();
+
+  @for $i from 0 to length($position) {
+    $positionKeys: append($positionKeys, $i);
+  }
+
+  @return $positionKeys;
 }
