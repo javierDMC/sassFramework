@@ -1,0 +1,31 @@
+.c-cuadrado{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+
+    &--azul{
+        background-color: getColor("principal", 7);
+    }
+
+    &--verde{
+        background-color: getColor("verde",6);
+    }
+
+    &--rojo{
+        background-color: getColor("rojo",6);
+    }
+
+    &--400px{
+        height: 400px;
+        width: 400px;
+    }
+
+    &--20{
+        height: 20%;
+        width: 20%;
+    }
+
+    &--20vw{
+        width: 20vw;
+    }
+}

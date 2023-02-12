@@ -480,6 +480,32 @@ html {
   }*/
 }
 
+.c-cuadrado {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+.c-cuadrado--azul {
+  background-color: #015FAD;
+}
+.c-cuadrado--verde {
+  background-color: #37955B;
+}
+.c-cuadrado--rojo {
+  background-color: #F3453F;
+}
+.c-cuadrado--400px {
+  height: 400px;
+  width: 400px;
+}
+.c-cuadrado--20 {
+  height: 20%;
+  width: 20%;
+}
+.c-cuadrado--20vw {
+  width: 20vw;
+}
+
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
 la variable $valor será igual a getPadding($clave+1)
 ahora, por cada clave, va a generar una clase css llamada g--padding-?
