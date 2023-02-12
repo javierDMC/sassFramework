@@ -161,3 +161,18 @@ un valor por cada elemento de la longitud de la lista de variables de paddings*/
 
   @return $displayKeys;
 }
+
+//*******OPACITY********//
+@function getOpacity($key) {
+  @return nth($opacity, $key);
+}
+
+@function getOpacityKeys() {
+  $opacityKeys: ();
+
+  @for $i from 0 to length($opacity) {
+    $opacityKeys: append($opacityKeys, $i);
+  }
+
+  @return $opacityKeys;
+}

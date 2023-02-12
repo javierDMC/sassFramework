@@ -1,7 +1,7 @@
 @each $clave in getDisplayKeys(){
     $valor: getDisplay($clave+1);
 
-    .g--display-#{$clave}{
+    .g--display-#{$valor}{
         display: $valor;
     }
 

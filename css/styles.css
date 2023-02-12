@@ -2541,23 +2541,23 @@ html {
     border-color: #66430B;
   }
 }
-.g--display-0 {
+.g--display-flex {
   display: "flex";
 }
 
-.g--display-1 {
+.g--display-block {
   display: "block";
 }
 
-.g--display-2 {
+.g--display-grid {
   display: "grid";
 }
 
-.g--display-3 {
+.g--display-flow {
   display: "flow";
 }
 
-.g--display-4 {
+.g--display-inline {
   display: "inline";
 }
 
@@ -4323,6 +4323,90 @@ html {
   .g--margin-horizontal-16\@desktop {
     margin-left: 128px;
     margin-right: 128px;
+  }
+}
+.g--opacity-0 {
+  opacity: 0;
+}
+
+.g--opacity-1 {
+  opacity: 0.2;
+}
+
+.g--opacity-2 {
+  opacity: 0.4;
+}
+
+.g--opacity-3 {
+  opacity: 0.6;
+}
+
+.g--opacity-4 {
+  opacity: 0.8;
+}
+
+.g--opacity-5 {
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  .g--opacity-1\@movil {
+    opacity: 0;
+  }
+  .g--opacity-2\@movil {
+    opacity: 0.2;
+  }
+  .g--opacity-3\@movil {
+    opacity: 0.4;
+  }
+  .g--opacity-4\@movil {
+    opacity: 0.6;
+  }
+  .g--opacity-5\@movil {
+    opacity: 0.8;
+  }
+  .g--opacity-6\@movil {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .g--opacity-1\@tablet {
+    opacity: 0;
+  }
+  .g--opacity-2\@tablet {
+    opacity: 0.2;
+  }
+  .g--opacity-3\@tablet {
+    opacity: 0.4;
+  }
+  .g--opacity-4\@tablet {
+    opacity: 0.6;
+  }
+  .g--opacity-5\@tablet {
+    opacity: 0.8;
+  }
+  .g--opacity-6\@tablet {
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .g--opacity-1\@desktop {
+    opacity: 0;
+  }
+  .g--opacity-2\@desktop {
+    opacity: 0.2;
+  }
+  .g--opacity-3\@desktop {
+    opacity: 0.4;
+  }
+  .g--opacity-4\@desktop {
+    opacity: 0.6;
+  }
+  .g--opacity-5\@desktop {
+    opacity: 0.8;
+  }
+  .g--opacity-6\@desktop {
+    opacity: 1;
   }
 }
 /*Por cada clave en lo que nos devuelve la funcion getPaddingKeys,
