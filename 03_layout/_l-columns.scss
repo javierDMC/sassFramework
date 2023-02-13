@@ -1,0 +1,16 @@
+.l-columns{
+    display: grid;
+    grid-template-columns:repeat($maxColumns,1fr) ;
+}   
+
+@each $breakpointKey, $breakPointValue in $breakPoints {
+    @media (min-width: $breakPointValue) {
+      @for $i from 1 through $maxColumns {
+        .l-columns--#{$i}\@#{$breakpointKey} {
+            grid-template-columns:repeat($i,1fr) ;
+        }
+      }
+    }
+}
+  
+    

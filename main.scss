@@ -2,39 +2,17 @@
 
 @import
 '01_utilities/functions',
-'01_utilities/mixins',
 '01_utilities/variables';
 
 @import
-'02_base/override',
 '02_base/reset';
 
 @import
-'03_layout/l-file-responsive',
-'03_layout/l-center-horizontal',
-'03_layout/l-columns-4',
-'03_layout/l-flex';
+'03_layout/l-columns';
 
 @import
-'04_components/c-button',
-'04_components/c-panel';
+'04_components/c-rectangulo',
+'04_components/c-ejercicio3';
 
 @import
-'06_global/g--border-radius',
-'06_global/g--color',
-'06_global/g--display',
-'06_global/g--font-family',
-'06_global/g--font-size',
-'06_global/g--height',
-'06_global/g--margin',
-'06_global/g--opacity',
-'06_global/g--overflow',
-'06_global/g--padding',
-'06_global/g--position',
-'06_global/g--shadow',
-'06_global/g--text-align',
-'06_global/g--text',
-'06_global/g--viewport-height',
-'06_global/g--viewport-width',
-'06_global/g--width',
-'06_global/g--z-index';
+'06_global/g--alineacion-texto';

@@ -1,0 +1,16 @@
+@each $alignKey in getAlignKey() {
+    .g--alineacion-texto-#{$alignKey}{
+        text-align: getAlignValue($alignKey)
+    }
+}
+
+@each $breakKey, $breakValue in $breakPoints {
+    @media (min-width: $breakValue) {
+      @each $key in getAlignKey() {
+        .g--alineacion-texto-#{$key}\@#{$breakKey} {
+            text-align: getAlignValue($key);
+        }
+      }
+    }
+}
+
